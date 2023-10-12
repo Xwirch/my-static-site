@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Control</title>
+</head>
+<body>
+    <h1>Bot Control</h1>
+    <button id="startButton">Start Bot</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const startButton = document.getElementById("startButton");
+
+            startButton.addEventListener("click", function() {
+                const script = document.createElement("script");
+                script.src = "your-script.js"; // Replace with your script filename
+
+                // Load the script when the Start button is clicked.
+                document.body.appendChild(script);
+            });
+        });
+    </script>
+</body>
+</html>
